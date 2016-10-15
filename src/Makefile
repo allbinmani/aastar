@@ -6,14 +6,8 @@ LDFLAGS ?= -Wl,--gc-sections
 COMPILE=$(CC) $(CFLAGS)
 LINK=$(LD) $(LDFLAGS)
 
-example: example.o AstarNode.o NodeHeap.o Astar.o debugcompat.o
-	$(LINK) -o example example.o debugcompat.o NodeHeap.o AstarNode.o Astar.o
-
-strip:
-	strip -s -R '.comment' -R '.gnu.version' --strip-unneeded example
-
-clean:
-	rm -f *.o
+libastar.o: Astar.o NodeHeap.o AstarNode.o debugcompat.o
+	ar -cr libastar.a Astar.o NodeHeap.o AstarNode.o debugcompat.o
 
 debugcompat.o: debugcompat.h debugcompat.c
 	$(COMPILE) -c debugcompat.c -o debugcompat.o 
@@ -26,6 +20,3 @@ NodeHeap.o: NodeHeap.h NodeHeap.cpp
 
 Astar.o: Astar.h Astar.cpp
 	$(COMPILE) -c Astar.cpp -o Astar.o
-
-example.o: example.cpp
-	$(COMPILE) -DEXAMPLE -c example.cpp -o example.o
