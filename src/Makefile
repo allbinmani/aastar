@@ -1,7 +1,8 @@
-CC=g++
-LD=$(CC)
-CFLAGS=$(CCFLAGS) -Os -Wall -Wp,-I.
-LDFLAGS= -Wl,--gc-sections
+CC ?= g++
+LD ?= $(CC)
+CFLAGS ?= $(CCFLAGS) -Os -Wall -Wp,-I.
+LDFLAGS ?= -Wl,--gc-sections
+
 COMPILE=$(CC) $(CFLAGS)
 LINK=$(LD) $(LDFLAGS)
 
