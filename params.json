@@ -1,0 +1,6 @@
+{
+  "name": "Aastar",
+  "tagline": "Another A* (a-star) implementation in C++, intended for use in embedded devices",
+  "body": "## AAstar - Another A* implementation in C++\r\n\r\nQuick implementation of A* for fixed grid somewhat optimized for size, memory usage and simplicity, primarily intended for use in low-memory environments, for example in embedded devices.\r\n\r\n\r\n### Building\r\n\r\n#### Linux (Debian)\r\n\r\n- Install `build-essential`\r\n- Run `make` in the `src` directory\r\n\r\n#### OSX 10+\r\n\r\n- Install XCode\r\n- Run the following command in a Terminal, adjust `10.11` to match your version of OSX:\r\n    # LDFLAGS=\"-lstdc++ -Wl,-macosx_version_min,10.11\" make\r\n\r\n#### Windows\r\n\r\n- Not tested / supported, but most likely builds with both GCC from MinGW/CygWin, and VC++\r\n\r\n\r\n### Using\r\n\r\n#### Example usage\r\n\r\nSee the `examples` directory for a generic C++ example, as well as an Arduino example sketch.\r\n\r\n#### As an Arduino library\r\n\r\nTo use as an Arduino library, place the files from the `src` directory of this repository in a folder named `aastar` the Arduino `libraries` folder. Use the \"Include Library\" menu option in the Arduino IDE Sketch-menu and look for \"AAstar\" the library list.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

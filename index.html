@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aastar by allbinmani</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aastar</h1>
+        <p>Another A* (a-star) implementation in C++, intended for use in embedded devices</p>
+
+        <p class="view"><a href="https://github.com/allbinmani/aastar">View the Project on GitHub <small>allbinmani/aastar</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/allbinmani/aastar/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/allbinmani/aastar/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/allbinmani/aastar">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a id="aastar---another-a-implementation-in-c" class="anchor" href="#aastar---another-a-implementation-in-c" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AAstar - Another A* implementation in C++</h2>
+
+<p>Quick implementation of A* for fixed grid somewhat optimized for size, memory usage and simplicity, primarily intended for use in low-memory environments, for example in embedded devices.</p>
+
+<h3>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h3>
+
+<h4>
+<a id="linux-debian" class="anchor" href="#linux-debian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux (Debian)</h4>
+
+<ul>
+<li>Install <code>build-essential</code>
+</li>
+<li>Run <code>make</code> in the <code>src</code> directory</li>
+</ul>
+
+<h4>
+<a id="osx-10" class="anchor" href="#osx-10" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OSX 10+</h4>
+
+<ul>
+<li>Install XCode</li>
+<li>Run the following command in a Terminal, adjust <code>10.11</code> to match your version of OSX:
+# LDFLAGS="-lstdc++ -Wl,-macosx_version_min,10.11" make</li>
+</ul>
+
+<h4>
+<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows</h4>
+
+<ul>
+<li>Not tested / supported, but most likely builds with both GCC from MinGW/CygWin, and VC++</li>
+</ul>
+
+<h3>
+<a id="using" class="anchor" href="#using" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using</h3>
+
+<h4>
+<a id="example-usage" class="anchor" href="#example-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example usage</h4>
+
+<p>See the <code>examples</code> directory for a generic C++ example, as well as an Arduino example sketch.</p>
+
+<h4>
+<a id="as-an-arduino-library" class="anchor" href="#as-an-arduino-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>As an Arduino library</h4>
+
+<p>To use as an Arduino library, place the files from the <code>src</code> directory of this repository in a folder named <code>aastar</code> the Arduino <code>libraries</code> folder. Use the "Include Library" menu option in the Arduino IDE Sketch-menu and look for "AAstar" the library list.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/allbinmani">allbinmani</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
