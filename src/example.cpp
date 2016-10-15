@@ -1,3 +1,8 @@
+#ifdef EXAMPLE
+#ifdef ARDUINO
+#include <Arduino.h>
+#define sleep(x) (delay(x*1000))
+#else
 #include <unistd.h> // for sleep()
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,7 +10,6 @@
 
 //#define DEBUG 1
 
-#define ASTAR_FIELD_SIZE 160
 
 #ifndef micros
 #include <sys/time.h>
@@ -18,6 +22,9 @@ unsigned long micros() {
   return 0L;
 }
 #endif
+#endif
+
+#define ASTAR_FIELD_SIZE 160
 
 #include <Astar.h>
 #include <debugcompat.h>
@@ -134,4 +141,5 @@ int main(int argc, char **argv) {
     delete astar;
     return 0;
 }
+#endif
 #endif

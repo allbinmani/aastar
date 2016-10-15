@@ -28,4 +28,4 @@ Astar.o: Astar.h Astar.cpp
 	$(COMPILE) -c Astar.cpp -o Astar.o
 
 example.o: example.cpp
-	$(COMPILE) -c example.cpp -o example.o
+	$(COMPILE) -DEXAMPLE -c example.cpp -o example.o
