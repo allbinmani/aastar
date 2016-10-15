@@ -9,7 +9,7 @@ public:
   AstarNode();
   AstarNode(const int x, const int y, const int id);
   void reset();
-  virtual unsigned int getPriority();
+  unsigned int getPriority();
   unsigned int getG();
   void updateG(unsigned int newG);
   void updateH(unsigned int newH);
