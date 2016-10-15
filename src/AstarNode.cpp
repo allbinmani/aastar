@@ -1,12 +1,7 @@
 
 #include <AstarNode.h>
 
-int _abss(int _x) {
-  if(_x < 0) {
-    return -_x;
-  }
-  return _x;
-}
+#define _abss(_x) ((x < 0 ? -x : x))
 
 AstarNode::AstarNode() {
   this->id = 0;
