@@ -6,8 +6,8 @@
 class NodeHeapNode {
 public:
   NodeHeapNode() {heapIndex=0;};
-  virtual ~NodeHeapNode() {};
-  virtual unsigned int getPriority() = 0;
+  ~NodeHeapNode() {};
+  inline virtual unsigned int getPriority() { return 0; };
   unsigned int heapIndex;
 };
 
